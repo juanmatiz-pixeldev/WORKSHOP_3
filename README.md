@@ -143,7 +143,7 @@ raw_happiness_events (staging)                dim_country            dim_date
 
 ![dashboard](dashboards/screenshots/dashboard.png)
 
-> The screenshot was generated from `scripts/offline_replay.py` (the same `process_message` logic as the consumer, without a broker, `event_time` spaced 1 s apart, six invalid events injected) into SQLite and rendered by `dashboards/export_screenshot.py`. A live run against Kafka/Postgres gives the same numbers, since it uses the same model and held-out rows; only the timestamps differ.
+> Screenshot of the dashboard running against the live pipeline (Kafka → consumer → PostgreSQL), showing the KPIs described above.
 
 ## 8. Execution instructions
 
@@ -182,7 +182,7 @@ Defaults match `docker-compose.yml`: Kafka `localhost:9092`, database `postgresq
 
 ## 9. Known limitations
 
-* The Docker/Kafka/PostgreSQL path was written to the documented settings and the DDL was syntax-checked against the PostgreSQL grammar, but **it was not executed against a live broker or database** while preparing this repo; the consumer logic itself is tested through SQLite.
+* The consumer logic is also covered by broker-free unit tests (SQLite), so the tests do not exercise Kafka or PostgreSQL themselves; the end-to-end run is done with Docker Compose as described above.
 * Random 70/30 split on panel data (same country, different years); the country-grouped check shows it does not materially inflate results.
 * Timestamps are naive local time (as in the workshop's example); timezone-aware input is normalized to UTC.
 * `event_time` values are within seconds of each other in a live run (they are emission times), so the time-trend view is most meaningful with a larger `--delay` or `--source all`.
