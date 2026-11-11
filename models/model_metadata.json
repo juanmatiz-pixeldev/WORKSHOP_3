@@ -1,0 +1,20 @@
+{
+  "model_name": "linear_regression",
+  "model_version": "20261110010214",
+  "features": [
+    "gdp",
+    "family",
+    "health",
+    "freedom",
+    "generosity",
+    "corruption"
+  ],
+  "target": "happiness_score",
+  "test_size": 0.3,
+  "random_state": 42,
+  "metrics_test": {
+    "MAE": 0.4288855734565174,
+    "RMSE": 0.5538384469985669,
+    "R2": 0.7599169846867255
+  }
+}

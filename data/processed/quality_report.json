@@ -1,0 +1,173 @@
+{
+  "per_year": {
+    "2015": {
+      "rows": 158,
+      "columns": [
+        "Country",
+        "Region",
+        "Happiness Rank",
+        "Happiness Score",
+        "Standard Error",
+        "Economy (GDP per Capita)",
+        "Family",
+        "Health (Life Expectancy)",
+        "Freedom",
+        "Trust (Government Corruption)",
+        "Generosity",
+        "Dystopia Residual"
+      ],
+      "missing_cells": {},
+      "exact_duplicates": 0,
+      "dtypes": {
+        "Country": "str",
+        "Region": "str",
+        "Happiness Rank": "int64",
+        "Happiness Score": "float64",
+        "Standard Error": "float64",
+        "Economy (GDP per Capita)": "float64",
+        "Family": "float64",
+        "Health (Life Expectancy)": "float64",
+        "Freedom": "float64",
+        "Trust (Government Corruption)": "float64",
+        "Generosity": "float64",
+        "Dystopia Residual": "float64"
+      }
+    },
+    "2016": {
+      "rows": 157,
+      "columns": [
+        "Country",
+        "Region",
+        "Happiness Rank",
+        "Happiness Score",
+        "Lower Confidence Interval",
+        "Upper Confidence Interval",
+        "Economy (GDP per Capita)",
+        "Family",
+        "Health (Life Expectancy)",
+        "Freedom",
+        "Trust (Government Corruption)",
+        "Generosity",
+        "Dystopia Residual"
+      ],
+      "missing_cells": {},
+      "exact_duplicates": 0,
+      "dtypes": {
+        "Country": "str",
+        "Region": "str",
+        "Happiness Rank": "int64",
+        "Happiness Score": "float64",
+        "Lower Confidence Interval": "float64",
+        "Upper Confidence Interval": "float64",
+        "Economy (GDP per Capita)": "float64",
+        "Family": "float64",
+        "Health (Life Expectancy)": "float64",
+        "Freedom": "float64",
+        "Trust (Government Corruption)": "float64",
+        "Generosity": "float64",
+        "Dystopia Residual": "float64"
+      }
+    },
+    "2017": {
+      "rows": 155,
+      "columns": [
+        "Country",
+        "Happiness.Rank",
+        "Happiness.Score",
+        "Whisker.high",
+        "Whisker.low",
+        "Economy..GDP.per.Capita.",
+        "Family",
+        "Health..Life.Expectancy.",
+        "Freedom",
+        "Generosity",
+        "Trust..Government.Corruption.",
+        "Dystopia.Residual"
+      ],
+      "missing_cells": {},
+      "exact_duplicates": 0,
+      "dtypes": {
+        "Country": "str",
+        "Happiness.Rank": "int64",
+        "Happiness.Score": "float64",
+        "Whisker.high": "float64",
+        "Whisker.low": "float64",
+        "Economy..GDP.per.Capita.": "float64",
+        "Family": "float64",
+        "Health..Life.Expectancy.": "float64",
+        "Freedom": "float64",
+        "Generosity": "float64",
+        "Trust..Government.Corruption.": "float64",
+        "Dystopia.Residual": "float64"
+      }
+    },
+    "2018": {
+      "rows": 156,
+      "columns": [
+        "Overall rank",
+        "Country or region",
+        "Score",
+        "GDP per capita",
+        "Social support",
+        "Healthy life expectancy",
+        "Freedom to make life choices",
+        "Generosity",
+        "Perceptions of corruption"
+      ],
+      "missing_cells": {
+        "Perceptions of corruption": 1
+      },
+      "exact_duplicates": 0,
+      "dtypes": {
+        "Overall rank": "int64",
+        "Country or region": "str",
+        "Score": "float64",
+        "GDP per capita": "float64",
+        "Social support": "float64",
+        "Healthy life expectancy": "float64",
+        "Freedom to make life choices": "float64",
+        "Generosity": "float64",
+        "Perceptions of corruption": "float64"
+      }
+    },
+    "2019": {
+      "rows": 156,
+      "columns": [
+        "Overall rank",
+        "Country or region",
+        "Score",
+        "GDP per capita",
+        "Social support",
+        "Healthy life expectancy",
+        "Freedom to make life choices",
+        "Generosity",
+        "Perceptions of corruption"
+      ],
+      "missing_cells": {},
+      "exact_duplicates": 0,
+      "dtypes": {
+        "Overall rank": "int64",
+        "Country or region": "str",
+        "Score": "float64",
+        "GDP per capita": "float64",
+        "Social support": "float64",
+        "Healthy life expectancy": "float64",
+        "Freedom to make life choices": "float64",
+        "Generosity": "float64",
+        "Perceptions of corruption": "float64"
+      }
+    }
+  },
+  "unified_rows": 782,
+  "unified_countries": 164,
+  "imputed_corruption_rows": 1,
+  "outlier_counts": {
+    "happiness_score": 0,
+    "gdp": 0,
+    "family": 10,
+    "health": 0,
+    "freedom": 0,
+    "generosity": 17,
+    "corruption": 68
+  }
+}
